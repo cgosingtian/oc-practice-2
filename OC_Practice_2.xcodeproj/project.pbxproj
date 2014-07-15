@@ -10,6 +10,7 @@
 		4F249CAE19751B2C00BDE259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F249CAD19751B2C00BDE259 /* Foundation.framework */; };
 		4F249CB119751B2C00BDE259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249CB019751B2C00BDE259 /* main.m */; };
 		4F249CB519751B2C00BDE259 /* OC_Practice_2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F249CB419751B2C00BDE259 /* OC_Practice_2.1 */; };
+		4F249CBD19751B3F00BDE259 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249CBC19751B3F00BDE259 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		4F249CB019751B2C00BDE259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F249CB319751B2C00BDE259 /* OC_Practice_2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OC_Practice_2-Prefix.pch"; sourceTree = "<group>"; };
 		4F249CB419751B2C00BDE259 /* OC_Practice_2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OC_Practice_2.1; sourceTree = "<group>"; };
+		4F249CBB19751B3F00BDE259 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		4F249CBC19751B3F00BDE259 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				4F249CB019751B2C00BDE259 /* main.m */,
+				4F249CBB19751B3F00BDE259 /* Student.h */,
+				4F249CBC19751B3F00BDE259 /* Student.m */,
 				4F249CB419751B2C00BDE259 /* OC_Practice_2.1 */,
 				4F249CB219751B2C00BDE259 /* Supporting Files */,
 			);
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F249CB119751B2C00BDE259 /* main.m in Sources */,
+				4F249CBD19751B3F00BDE259 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
