@@ -19,4 +19,6 @@
 - (void)setAge:(int)a;
 - (int)getAge;
 
+- (id)initStudentAge:(int)a Name:(NSMutableString *)n;
+
 @end

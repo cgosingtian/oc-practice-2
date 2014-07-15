@@ -33,4 +33,12 @@
     return name;
 }
 
+- (id)initStudentAge: (int) a Name:(NSMutableString *)n
+{
+    age = a;
+    name = n;
+    
+    return self;
+}
+
 @end
