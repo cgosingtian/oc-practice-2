@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Student.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        Student *student = [[Student alloc] init];
+        [student setName:(NSMutableString *)@"Chase"];
+        [student setAge:(int)29];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Hi, I'm %@, %d years old!", student.getName,student.getAge);
         
     }
     return 0;
