@@ -11,6 +11,7 @@
 		4F249CB119751B2C00BDE259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249CB019751B2C00BDE259 /* main.m */; };
 		4F249CB519751B2C00BDE259 /* OC_Practice_2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F249CB419751B2C00BDE259 /* OC_Practice_2.1 */; };
 		4F249CBD19751B3F00BDE259 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249CBC19751B3F00BDE259 /* Student.m */; };
+		4F25939F1977779000CA737E /* PartTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25939E1977779000CA737E /* PartTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		4F249CB419751B2C00BDE259 /* OC_Practice_2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OC_Practice_2.1; sourceTree = "<group>"; };
 		4F249CBB19751B3F00BDE259 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		4F249CBC19751B3F00BDE259 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		4F25939D1977779000CA737E /* PartTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PartTimer.h; path = ../PartTimer.h; sourceTree = "<group>"; };
+		4F25939E1977779000CA737E /* PartTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PartTimer.m; path = ../PartTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		4F249CAF19751B2C00BDE259 /* OC_Practice_2 */ = {
 			isa = PBXGroup;
 			children = (
+				4F25939D1977779000CA737E /* PartTimer.h */,
+				4F25939E1977779000CA737E /* PartTimer.m */,
 				4F249CB019751B2C00BDE259 /* main.m */,
 				4F249CBB19751B3F00BDE259 /* Student.h */,
 				4F249CBC19751B3F00BDE259 /* Student.m */,
@@ -146,6 +151,7 @@
 			files = (
 				4F249CB119751B2C00BDE259 /* main.m in Sources */,
 				4F249CBD19751B3F00BDE259 /* Student.m in Sources */,
+				4F25939F1977779000CA737E /* PartTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,7 @@
 				4F249CBA19751B2C00BDE259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
