@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Student.h"
+#import "PartTimer.h"
 
 int main(int argc, const char * argv[])
 {
@@ -41,6 +42,11 @@ int main(int argc, const char * argv[])
         //NSLog(@"testMessage length: %d", [testMessage length]);
         
         //NSLog(@"%@",[NSHost currentHost].localizedName);
+        
+        //testing inheritance
+        PartTimer *pTimer = [[PartTimer alloc] initStudentAge:25 Name:(NSMutableString *)@"Tricia"];
+        [pTimer setJob:@"Blogger"];
+        NSLog(@"New part timer %@, age %d, working as a %@, here!", [pTimer name], [pTimer age], [pTimer job]);
     }
     return 0;
 }
