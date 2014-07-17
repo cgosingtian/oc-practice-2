@@ -10,9 +10,10 @@
 
 @interface Student : NSObject
 
-@property (nonatomic) int age;
-@property (nonatomic) NSMutableString *name;
+@property int age;
+@property NSMutableString *name;
 @property NSMutableArray *clubs;
+@property Student *friend;
 
 //- (void)setName:(NSMutableString *)name;
 //- (NSMutableString *)name;

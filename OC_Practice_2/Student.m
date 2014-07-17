@@ -36,6 +36,7 @@
 
 - (id)initStudentAge: (int) a Name:(NSMutableString *)n
 {
+    self = [super init];
     //age = a;
     //name = n;
     

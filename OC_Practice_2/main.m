@@ -47,6 +47,9 @@ int main(int argc, const char * argv[])
         PartTimer *pTimer = [[PartTimer alloc] initStudentAge:25 Name:(NSMutableString *)@"Tricia"];
         [pTimer setJob:@"Blogger"];
         NSLog(@"New part timer %@, age %d, working as a %@, here!", [pTimer name], [pTimer age], [pTimer job]);
+        
+        [student setFriend:pTimer]; //object Student as an instance variable, using the Student subclass PartTimer
+        NSLog(@"%@ is now friends with %@!",[student name],[[student friend] name]);
     }
     return 0;
 }
