@@ -10,14 +10,14 @@
 
 @implementation Student
 
-@synthesize age;
+@synthesize age=_age; // we requested _age to by synthesized
 @synthesize name;
 @synthesize clubs;
 
-//- (void)setAge:(int) a
-//{
-//    age = a;
-//}
+- (void)setAge:(int) a
+{
+    _age = a; //while we're accessing age here as _age, the getter and setter is still based on the original name
+}
 
 //- (int)age
 //{
@@ -46,6 +46,11 @@
     return self;
 }
 
+-(NSMutableArray *)clubs
+{
+    return clubs;
+}
+
 - (void)addClub:(NSString *)club
 {
     NSLog(@"Adding %@",club);
@@ -56,6 +61,12 @@
     [clubs addObject:club];
     NSLog(@"Clubs joined: %d", [clubs count]);
 }
+
+//- (void)dealloc
+//{
+//    NSLog(@"Deallocating %@.",name);
+//}
+
 //- (NSMutableArray *)clubs
 //{
 //    return clubs;

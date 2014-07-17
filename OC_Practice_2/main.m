@@ -47,9 +47,21 @@ int main(int argc, const char * argv[])
         PartTimer *pTimer = [[PartTimer alloc] initStudentAge:25 Name:(NSMutableString *)@"Tricia"];
         [pTimer setJob:@"Blogger"];
         NSLog(@"New part timer %@, age %d, working as a %@, here!", [pTimer name], [pTimer age], [pTimer job]);
-        
+
         [student setFriend:pTimer]; //object Student as an instance variable, using the Student subclass PartTimer
         NSLog(@"%@ is now friends with %@!",[student name],[[student friend] name]);
+        [pTimer setFriend:student];
+        NSLog(@"%@ is now friends with %@!",[pTimer name],[[pTimer friend] name]);
+        
+        //below, we try sorting in descending order by name with the use of NSSortDescriptor and sortUsingDescriptors
+        //in an NSMutableArray
+        NSMutableArray *arrStudents = [[NSMutableArray alloc] initWithObjects:student,pTimer, nil];
+        NSSortDescriptor *sdDescendingName = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:false];
+        [arrStudents sortUsingDescriptors:[NSArray arrayWithObjects:sdDescendingName,nil]];
+        for (Student *s in arrStudents)
+        {
+            NSLog(@"%@",s.name);
+        }
     }
     return 0;
 }

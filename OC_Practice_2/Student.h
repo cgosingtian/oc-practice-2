@@ -12,8 +12,8 @@
 
 @property int age;
 @property NSMutableString *name;
-@property NSMutableArray *clubs;
 @property Student *friend;
+@property NSMutableArray *clubs;
 
 //- (void)setName:(NSMutableString *)name;
 //- (NSMutableString *)name;
@@ -25,5 +25,7 @@
 //- (NSMutableArray *)clubs;
 
 - (id)initStudentAge:(int)age Name:(NSMutableString *)name;
+
+//- (void)dealloc;
 
 @end
