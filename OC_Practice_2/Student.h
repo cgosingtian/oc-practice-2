@@ -14,14 +14,14 @@
 @property (nonatomic) NSMutableString *name;
 @property NSMutableArray *clubs;
 
-- (void)setName:(NSMutableString *)name;
-- (NSMutableString *)name;
-
-- (void)setAge:(int)age;
-- (int)age;
+//- (void)setName:(NSMutableString *)name;
+//- (NSMutableString *)name;
+//
+//- (void)setAge:(int)age;
+//- (int)age;
 
 - (void)addClub:(NSString *)club;
-- (NSMutableArray *)clubs;
+//- (NSMutableArray *)clubs;
 
 - (id)initStudentAge:(int)age Name:(NSMutableString *)name;
 

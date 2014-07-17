@@ -19,20 +19,20 @@
 //    age = a;
 //}
 
-- (int)age
-{
-    return age;
-}
+//- (int)age
+//{
+//    return age;
+//}
 
 //- (void)setName:(NSMutableString *) n
 //{
 //    name = n;
 //}
 
-- (NSMutableString *)name
-{
-    return name;
-}
+//- (NSMutableString *)name
+//{
+//    return name;
+//}
 
 - (id)initStudentAge: (int) a Name:(NSMutableString *)n
 {
@@ -55,8 +55,8 @@
     [clubs addObject:club];
     NSLog(@"Clubs joined: %d", [clubs count]);
 }
-- (NSMutableArray *)clubs
-{
-    return clubs;
-}
+//- (NSMutableArray *)clubs
+//{
+//    return clubs;
+//}
 @end
