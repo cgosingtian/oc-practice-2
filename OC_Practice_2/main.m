@@ -62,6 +62,9 @@ int main(int argc, const char * argv[])
         {
             NSLog(@"%@",s.name);
         }
+        
+        //Trying out writing to file
+        [[student name] writeToFile:@"/Users/chasegosingtian/Desktop/name.txt" atomically:true encoding:NSUTF8StringEncoding error:NULL];
     }
     return 0;
 }
